@@ -23,7 +23,8 @@ The main advantages of this tool over ``rustdoc`` are:
 Example
 =======
 
-.. code-block: rust
+::
+
    /*
     * Brief summary of the method
     * 
