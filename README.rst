@@ -4,7 +4,7 @@ rustdoc-rst
 
 A RST version of the rustdoc tool for the Rust Language (www.rust-lang.org)
 
-It is tool deliberately based on the ``rustdoc`` tools but adapted for the restructedText markup language.
+It is tool deliberately based on the ``rustdoc`` tools but adapted for the `restructedText markup <http://en.wikipedia.org/wiki/ReStructuredText/>`_ language.
 
 The main advantages of this tool are:
 
@@ -14,6 +14,6 @@ The main advantages of this tool are:
   sphinx and reuse this wonderful tool.
 - RST has build in support for tables and extension.
 - doxygen-like syntax to structure ``method``, ``struct`` and ``trait`` documentations:
-   - @param
-   - @return
-   - @see
+   - ``@param``
+   - ``@return``
+   - ``@see``
