@@ -15,3 +15,4 @@ The main advantages of this tool are:
 - doxygen-like syntax:
    - @param
    - @return
+   - @see
