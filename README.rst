@@ -12,7 +12,8 @@ The main advantages of this tool are:
 - RST suffers less from the different implementation. The de facto standard for RST code documentation is the 
   shinx documentation builder (sphinx-doc.org). This tool is also deliberately made to integerate itself with
   sphinx and reuse this wonderful tool.
-- doxygen-like syntax:
+- RST has build in support for tables and extension.
+- doxygen-like syntax to structure ``method``, ``struct`` and ``trait`` documentations:
    - @param
    - @return
    - @see
