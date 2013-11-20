@@ -9,15 +9,17 @@ It is tool deliberately based on the ``rustdoc`` tools but adapted for the `rest
 The main advantages of this tool over ``rustdoc`` are:
 
 - easier to read: I personnally find RST files much clearer to read than Markdown
-- enforce structuration. It's not just a markup extraction tool, it will also fail it the documentation if badly shaped.
+- enforce structuration. It's not just a markup extraction tool, it will also fail if the documentation
+  is badly shaped.
 - RST suffers less from the different implementation. The de facto standard for RST code documentation is the 
   shinx documentation builder (sphinx-doc.org). This tool is also deliberately made to integerate itself with
   sphinx and reuse this wonderful tool.
 - RST has build in support for tables and extension.
 - doxygen-like syntax to structure ``method``, ``struct`` and ``trait`` documentations:
-   - ``@param``
-   - ``@return``
-   - ``@see``
+   - ``\param``
+   - ``\return``
+   - ``\see``
+   - ``\ref``
 
 
 Example
