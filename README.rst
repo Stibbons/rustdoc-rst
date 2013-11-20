@@ -28,14 +28,14 @@ Example
    /*
     * Brief summary of the method
     * 
-    * Returns a @vec of @T, containing everything from @v 
-    * whose index is in the range [@start, @end).
+    * Returns a \ref vec of \ref T, containing everything from \ref v 
+    * whose index is in the range [\ref start, \ref end).
     *
-    * @param v     input vector
-    * @param start start index (0-based)
-    * @param end   end index (0-based)
-    * @returns a new vector with the modified value
-    * @see otherMethod
+    * \param v     input vector
+    * \param start start index (0-based)
+    * \param end   end index (0-based)
+    * \returns a new vector with the modified value
+    * \see otherMethod
     * 
     */
     fn slice[T](array[T] v, uint start, uint end) -> vec[T] {
