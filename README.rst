@@ -6,9 +6,10 @@ A RST version of the rustdoc tool for the Rust Language (www.rust-lang.org)
 
 It is tool deliberately based on the ``rustdoc`` tools but adapted for the `restructedText markup <http://en.wikipedia.org/wiki/ReStructuredText/>`_ language.
 
-The main advantages of this tool are:
+The main advantages of this tool over ``rustdoc`` are:
 
 - easier to read: I personnally find RST files much clearer to read than Markdown
+- enforce structuration. It's not just a markup extraction tool, it will also fail it the documentation if badly shaped.
 - RST suffers less from the different implementation. The de facto standard for RST code documentation is the 
   shinx documentation builder (sphinx-doc.org). This tool is also deliberately made to integerate itself with
   sphinx and reuse this wonderful tool.
@@ -17,3 +18,25 @@ The main advantages of this tool are:
    - ``@param``
    - ``@return``
    - ``@see``
+
+
+Example
+=======
+
+.. code-block: rust
+   /*
+    * Brief summary of the method
+    * 
+    * Returns a @vec of @T, containing everything from @v 
+    * whose index is in the range [@start, @end).
+    *
+    * @param v     input vector
+    * @param start start index (0-based)
+    * @param end   end index (0-based)
+    * @returns a new vector with the modified value
+    * @see otherMethod
+    * 
+    */
+    fn slice[T](array[T] v, uint start, uint end) -> vec[T] {
+        assert (start <= end);
+        assert (end <= len[T](v));
